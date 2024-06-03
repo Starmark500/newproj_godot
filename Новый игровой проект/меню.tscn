@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://dt6mvy8rdyswj"]
+
+[ext_resource type="Script" path="res://меню.gd" id="1_x4dr1"]
+
+[node name="меню" type="Node2D"]
+position = Vector2(4, -5)
+script = ExtResource("1_x4dr1")
+
+[node name="play" type="Button" parent="."]
+offset_left = 335.0
+offset_top = 97.0
+offset_right = 805.0
+offset_bottom = 348.0
+theme_override_colors/font_color = Color(0.607843, 0.0627451, 0.192157, 1)
+theme_override_constants/outline_size = -3
+theme_override_font_sizes/font_size = 60
+text = "play nahui"
+
+[node name="play2" type="Button" parent="."]
+offset_left = 344.0
+offset_top = 392.0
+offset_right = 811.0
+offset_bottom = 557.0
+theme_override_colors/font_color = Color(0.607843, 0.0627451, 0.192157, 1)
+theme_override_constants/outline_size = -3
+theme_override_font_sizes/font_size = 42
+text = "выход
+"
+
+[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="play2" to="." method="_on_play_2_pressed"]

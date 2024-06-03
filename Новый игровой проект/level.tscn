@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3udubvfgo6ph"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pa1r4"]
+
+[node name="level" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 35.0
+offset_top = 128.0
+offset_right = 176.0
+offset_bottom = 151.0
+scale = Vector2(7.84463, 5.35462)
+text = "КАКАЯ ТО ХУЯНЯ"
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(372, 474)
+scale = Vector2(5.56995e+07, 3190.78)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-6.6787e-06, -0.148553)
+scale = Vector2(1.79535e-08, 0.000313403)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+scale = Vector2(1, 1)
+sprite_frames = SubResource("SpriteFrames_pa1r4")
